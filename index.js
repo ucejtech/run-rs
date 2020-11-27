@@ -17,6 +17,8 @@ const printHelp = require('./src/printHelp');
 const spawn = require('child_process').spawn;
 const os = require('os');
 
+require('./src/topologyManagerPatch');
+
 const ports = [];
 const isWin = process.platform === 'win32';
 let hostname = '';
@@ -118,7 +120,7 @@ function* run() {
       if (commander.bind_ip_all) {
         options.bind_ip_all = null;
       }
-      return options;
+      return { options };
     }), { replSet: 'rs' });
 
   if (commander.keep) {

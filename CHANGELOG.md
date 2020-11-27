@@ -1,3 +1,16 @@
+0.7.3 / 2020-11-27
+==================
+ * fix: use https to download mongodb #55 [Xaseron](https://github.com/Xaseron)
+ * fix: fixed cannot read property undefined in accessing message property #48 [ucejtech](https://github.com/ucejtech)
+
+0.7.2 / 2020-11-21
+==================
+ * fix: work around log message change for MongoDB 4.4 #53
+
+0.7.1 / 2020-10-11
+==================
+ * fix: correctly return options when creating replica set #50
+
 0.6.2 / 2019-10-12
 ==================
  * fix: correct OSX download URL for 4.2
